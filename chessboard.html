@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANKY MCGG - Script MCGG Terlengkap & Terpercaya</title>
+   
+    <!-- 1. SKRIP UTAMA ADSENSE DI DALAM <head> -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9630057727908445"
+     crossorigin="anonymous"></script>
+  
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            darkBg: '#090B13',
+                            cardBg: '#121626',
+                            cardBorder: '#1F263E',
+                            purple: '#7C3AED',
+                            pink: '#EC4899',
+                            cyan: '#06B6D4',
+                            green: '#25D366',
+                            greenHover: '#1DA851',
+                            accent: '#6366F1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #080a10;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px; /* Tinggi scrollbar untuk scroll horizontal */
+            width: 6px;  /* Lebar scrollbar jika ada scroll vertikal */
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #11162a; /* Warna jalur background scrollbar */
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #4c1d95; /* Warna batang scrollbar (Purple) */
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #7c3aed; /* Warna batang scrollbar saat di-hover / disentuh */
+        }
+        .font-serif-title {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .glass-header {
+            background: rgba(11, 14, 25, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .custom-glow {
+            box-shadow: 0 0 25px -5px rgba(124, 58, 237, 0.3);
+        }
+        .custom-glow-green {
+            box-shadow: 0 0 20px -2px rgba(37, 211, 102, 0.4);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 20%, rgba(124, 58, 237, 0.15) 0%, rgba(9, 11, 19, 0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-[#080a10] text-gray-100 min-h-screen flex flex-col selection:bg-purple-600 selection:text-white">
+
+    <!-- Header / Navbar Top -->
+    <header class="fixed top-0 left-0 right-0 z-40 glass-header border-b border-gray-800/80">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-center">
+            <a href="#" class="flex items-center space-x-2.5">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md">
+                    <span class="text-lg font-bold">♠</span>
+                </div>
+                <span class="text-xl font-extrabold tracking-wide text-white font-serif-title">
+                    SANKY<span class="text-blue-500"> MCGG</span>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <div class="h-20"></div>
+
+    <main class="max-w-6xl mx-auto px-4 flex-grow w-full space-y-8">
+        
+        <!-- Search Bar Section -->
+        <section class="pt-2 max-w-xl mx-auto">
+            <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                </span>
+                <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Cari skin, tema, deskripsi..." class="w-full bg-[#121626] border border-[#1f2742] text-gray-200 text-xs sm:text-sm rounded-xl pl-10 pr-4 py-3 focus:outline-none focus:border-purple-500 transition placeholder-gray-500 shadow-inner">
+            </div>
+        </section>
+ 
+        <!-- Hero Section -->
+        <section id="hero" class="hero-gradient pt-4 pb-2 text-center flex flex-col items-center">
+            <div class="inline-flex items-center space-x-1.5 bg-purple-950/80 border border-purple-500/30 px-3.5 py-1 rounded-full text-xs text-purple-300 font-medium mb-5 shadow-inner">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"></span>
+                <span>MAGIC CHESS GO GO</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight mb-4 font-serif-title max-w-2xl">
+                Script <span class="bg-gradient-to-r from-purple-400 via-indigo-300 to-cyan-400 bg-clip-text text-transparent">MCGG</span> Terlengkap & Terpercaya
+            </h1>
+
+            <p class="text-sm sm:text-base text-gray-300 leading-relaxed max-w-md mb-6 font-normal">
+                Koleksi Skin Commander dan Chessboard Eksklusif Magic Chess Go Go. Download File Script Gratis.
+            </p>
+
+            <div class="w-full max-w-2xl grid grid-cols-1 sm:grid-cols-2 gap-3 px-2">
+                <button onclick="openQrisModal()" class="py-3 px-4 bg-gradient-to-r from-[#c1189e] to-[#ff8de7] hover:from-[#c1189e] hover:to-[#c1189e] text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition duration-200 shadow-lg shadow-pink-500/30">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <span>DONASI SEIKHLASNYA</span>
+                </button>
+                <a href="https://lynk.id/sanky-mcgg" class="py-3 px-4 bg-gradient-to-r from-[#7c18c1] to-[#60a0ff] hover:from-[#7c18c1] hover:to-[#7c18c1] text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition duration-200 shadow-lg shadow-purple-500/30">
+                    <i class="fa-solid fa-download text-base"></i>
+                    <span>SCRIPT COMMANDER</span>
+                </a>
+            </div>
+
+            <!-- Modal QRIS -->
+            <div id="qrisModal" class="fixed inset-0 bg-black/80 backdrop-blur-md hidden items-center justify-center z-[9999] p-4" onclick="closeQrisModal()">
+              <div class="bg-[#151A33] border border-white/10 rounded-[24px] p-0 max-w-sm w-full relative shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+                <button onclick="closeQrisModal()" class="absolute top-4 right-4 w-9 h-9 bg-black/40 hover:bg-black/60 backdrop-blur text-white rounded-full flex items-center justify-center z-10 transition">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="w-full bg-white">
+                  <img src="image/qris.jpg" alt="QRIS Donasi" class="w-full h-auto">
+                </div>
+                <div class="p-6">
+                  <p class="text-[#38BDF8] text-xs font-bold tracking-widest mb-2">DONASI • DUKUNG KARYA</p>
+                  <h3 class="text-white font-extrabold text-2xl leading-tight mb-3">SCAN QRIS UNTUK DONASI</h3>
+                  <p class="text-white/60 text-sm">Dukung Sanky MCGG biar terus update script chessboard Gratis!</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+             <!-- 2. SLOT IKLAN ATAS (Di bawah header, sebelum daftar produk) -->
+            <div class="w-full bg-[#121626] border border-dashed border-gray-800 rounded-xl p-3 text-center mb-6 overflow-hidden">
+                <span class="text-[10px] text-gray-500 block uppercase tracking-widest mb-1">IKLAN / ADS</span>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9630057727908445"
+                     data-ad-slot="2957618554"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+      
+        <!-- Catalog Filter Pills Section -->
+        <section id="catalog" class="pt-2">
+            <div class="mb-3 text-center">
+              <p class="text-xs font-bold text-cyan-400 tracking-wider uppercase mb-1">KATALOG SKIN</p>
+              <div class="flex justify-center items-baseline">
+                <h2 class="text-2xl font-bold text-white font-serif-title">SCRIPT CHESSBOARD</h2>
+              </div>
+            </div>
+
+            <div id="filterPillsContainer" class="flex justify-center flex-wrap gap-2 pt-2 pb-3 max-h-56 overflow-y-auto no-scrollbar">
+                <!-- Pills generated dynamically -->
+            </div>
+        </section>
+
+        <!-- Products List Section -->
+        <section class="space-y-4">
+            <!-- Grid produk 1 kolom di HP, 2 kolom di tablet, 3 kolom di laptop -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Products generated dynamically -->
+            </div>
+            
+            <div id="paginationContainer" class="text-center pt-2 space-y-2 max-w-sm mx-auto">
+                <button id="loadMoreBtn" onclick="toggleShowAll()" class="w-full py-3 px-4 bg-[#121626] border border-[#232a42] text-cyan-400 font-semibold text-sm rounded-xl flex items-center justify-center space-x-2 hover:bg-[#1a2038] transition">
+                    <span id="loadMoreText">Lihat produk lainnya</span>
+                    <i id="loadMoreIcon" class="fa-solid fa-circle-chevron-down"></i>
+                </button>
+                <p id="productCountInfo" class="text-xs text-gray-400">Menampilkan 0 dari 0 produk</p>
+            </div>
+        </section>
+
+        <!-- Store Profile Section - FIX HP -->
+        <section class="pt-6 pb-10 space-y-4 max-w-4xl mx-auto px-4">
+            <div class="text-center">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest block mb-2">TENTANG WEBSITE</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-serif-title leading-tight">
+                SHARE <span class="text-cyan-400">SCRIPT MCGG</span> GRATIS
+                </h2>
+              <p class="text-sm text-gray-300 leading-relaxed mt-3 mb-2 max-w-2xl mx-auto">
+                Website Yang Membagikan Script Skin Commander & Chessboard Magic Chess Go Go Gratis
+              </p>
+        
+        <!-- Wrapper tombol biar gak nempel -->
+        <div class="pt-4">
+            <a href="https://wa.me/6285331059693?text=Halo%20SANKY%20MCGG,%20saya%20mau%20memberikan%20saran" target="_blank" class="w-full sm:w-auto inline-flex px-8 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-sm items-center justify-center gap-2 transition shadow-md">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>CUSTOMER SERVICE</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+            <!-- Contact Information Cards -->
+            <div class="pt-2">
+                <p class="text-center text-xs font-bold text-cyan-400 uppercase tracking-widest mb-3">Sosial Media</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <a href="https://chat.whatsapp.com/FpDnHL7drnm3SDHRKl3SYs?s=cl&p=a&mlu=4&ilr=4" target="_blank" class="bg-[#121626] border border-[#1F263E] rounded-xl p-3.5 flex items-center justify-between hover:border-green-500/40 transition">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-9 h-9 rounded-lg bg-green-950/80 border border-green-700/40 flex items-center justify-center text-green-400 text-base">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-gray-400 font-medium uppercase tracking-wider">GRUP KOMUNITAS</div>
+                                <div class="text-sm font-bold text-white">SANKY MCGG</div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-angle-right text-gray-500 text-xs"></i>
+                    </a>
+                    <a href="https://youtube.com/@sanky-mcgg?si=aXaBoU5tAIxnCXia" target="_blank" class="bg-[#121626] border border-[#1F263E] rounded-xl p-3.5 flex items-center justify-between hover:border-green-500/40 transition">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-9 h-9 rounded-lg bg-red-950/80 border border-red-700/40 flex items-center justify-center text-red-400 text-base">
+                                <i class=" fa-brands fa-youtube"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-gray-400 font-medium uppercase tracking-wider">CHANNEL YOUTUBE</div>
+                                <div class="text-sm font-bold text-white">SANKY MCGG</div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-angle-right text-gray-500 text-xs"></i>
+                    </a>
+            </div>
+              
+            <!-- 3. SLOT IKLAN BAWAH (Sebelum footer) -->
+        <div class="w-full bg-[#121626] border border-dashed border-gray-800 rounded-xl p-3 text-center mt-8 overflow-hidden">
+            <span class="text-[10px] text-gray-500 block uppercase tracking-widest mb-1">IKLAN / ADS</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9630057727908445"
+                 data-ad-slot="2957618554"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-8 pb-12 text-center border-t border-gray-900">
+            <h3 class="text-lg font-bold tracking-widest text-gray-400 font-serif-title uppercase">
+                MCGG.
+            </h3>
+            <p class="text-[11px] text-gray-600 mt-1">© 2026 SANKY MCGG. All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285331059693?text=Halo%20SANKY MCGG,%20saya%20ingin%20tanya%20produk" target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-xl custom-glow-green hover:scale-105 active:scale-95 transition-all duration-200">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Product Detail Modal (Pop-up 1) -->
+    <div id="productDetailModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-[#111526] border border-[#1f2742] rounded-2xl max-w-md w-full overflow-hidden shadow-2xl relative">
+            <button onclick="closeDetailModal()" class="absolute top-3 right-3 z-10 w-8 h-8 bg-black/60 hover:bg-black text-white rounded-full flex items-center justify-center backdrop-blur-sm transition">
+                <i class="fa-solid fa-xmark text-sm"></i>
+            </button>
+
+            <div id="detailImageContainer" class="relative"></div>
+
+            <div class="p-5 space-y-4">
+                <div id="detailSubtitle" class="text-[10px] font-extrabold text-cyan-400 uppercase tracking-wider flex items-center space-x-2"></div>
+
+                <h3 id="detailTitle" class="text-xl font-bold text-white uppercase tracking-wide"></h3>
+
+                <p id="detailDescription" class="text-xs text-gray-300 leading-relaxed"></p>
+
+                 <div class="flex flex-wrap gap-2 pt-1"> 
+                    <span id="detailCategoryBadge" class="text-[11px] bg-[#181d33] border border-[#273052] text-gray-300 px-3 py-1 rounded-full font-medium">
+                        Kategori: <strong id="detailCategoryName" class="text-white">COMMANDER ORIGINAL</strong>
+                    </span>
+                     <span class="text-[11px] bg-[#181d33] border border-[#273052] text-gray-300 px-3 py-1 rounded-full font-medium">
+                        Foto: 1 buah
+                    </span>
+                </div>
+
+                <div class="pt-3 flex items-center justify-between border-t border-gray-800/80">
+                    <div id="detailPrice" class="text-xl font-black text-green-400">
+                        Gratis
+                    </div>
+                    <button onclick="goToOrderModal()" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs rounded-xl shadow-lg transition flex items-center space-x-1.5">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Download File Script</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Replace Selection Modal (Pop-up 2 UI Slot Skin & Detail Script) -->
+    <div id="orderOptionsModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-[#0b0d19] border border-[#1d2238] rounded-3xl max-w-md w-full p-5 shadow-2xl relative space-y-4 max-h-[90vh] flex flex-col">
+            
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white w-7 h-7 bg-[#1c223a] rounded-full flex items-center justify-center z-10">
+                <i class="fa-solid fa-xmark text-sm"></i>
+            </button>
+
+            <!-- Header Title -->
+            <div class="pt-1">
+                <h3 class="text-xs font-bold text-gray-400 tracking-wider uppercase">PILIH SLOT SKIN (YANG KAMU PUNYA)</h3>
+            </div>
+
+            <!-- Search Input Slot Skin -->
+            <div class="relative">
+                <input type="text" id="skinSearchInput" oninput="filterSlotSkins()" placeholder="Cari nama skin..." class="w-full bg-[#11162a] border border-[#212a47] text-gray-200 text-xs rounded-xl px-3.5 py-2.5 pl-3 focus:outline-none focus:border-purple-500 transition placeholder-gray-500">
+            </div>
+
+            <!-- Grid Slot Skins -->
+            <div id="slotSkinGrid" class="grid grid-cols-3 sm:grid-cols-4 gap-2 overflow-y-auto pr-1 custom-scrollbar max-h-64 py-1">
+                <!-- Slot items generated via JavaScript -->
+            </div>
+
+            <!-- Detail Script Footer Info -->
+            <div class="space-y-2 pt-2 border-t border-gray-800/60">
+                <p class="text-[11px] font-bold text-gray-400 tracking-widest uppercase">DETAIL SCRIPT</p>
+                
+                <div class="bg-[#101426] border border-[#1e2540] rounded-xl p-3 space-y-2 text-xs">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Script</span>
+                        <span id="detailScriptName" class="font-bold text-white text-right">Chessboard Astro</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Replace</span>
+                        <span id="detailReplaceSkinName" class="font-bold text-white text-right">Mystic Grove</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Button -->
+            <button onclick="downloadSelectedFile()" class="w-full py-3 bg-[#615fffff] hover:bg-[#615fffff] text-white font-bold text-sm rounded-xl flex items-center justify-center space-x-2 shadow-lg transition custom-glow-green">
+                <i class="fa-solid fa-download text-base"></i>
+                <span>Download File Script</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        const categoryList = [
+            { id: 'all', name: 'Semua' },
+            { id: 'chessboard-original', name: 'CHESSBOARD ORIGINAL' },
+            { id: 'chessboard-custom', name: 'CHESSBOARD CUSTOM' }
+        ];
+
+        const slotSkinsData = [ 
+            { id: "origin-remains", label: "DEFAULT", name: "Origin Remains", image: "replace-chessboard/01.jpg" },
+            { id: "ruins-of-fail", label: "ELITE", name: "Ruins Of Fail", image: "replace-chessboard/03.jpg" },
+            { id: "memorial-hill", label: "ELITE", name: "Memorial Hill", image: "replace-chessboard/04.jpg" },
+            { id: "blazing-battlefield", label: "SPECIAL", name: "Blazing Battlefield", image: "replace-chessboard/05.jpg" },
+            { id: "empire-battlefield", label: "ELITE", name: "Empire Battlefield", image: "replace-chessboard/06.jpg" },
+            { id: "imperial-splendour", label: "ELITE", name: "Imperial Splendour", image: "replace-chessboard/07.jpg" },
+            { id: "silent-ridge", label: "ELITE", name: "Silent Ridge", image: "replace-chessboard/08.jpg" },
+            { id: "autumn-groves", label: "ELITE", name: "Autumn Groves", image: "replace-chessboard/09.jpg" },
+            { id: "verdant-wonderland", label: "ELITE", name: "Verdant Wonderland", image: "replace-chessboard/10.jpg" },
+            { id: "frigid-tranquility", label: "ELITE", name: "Frigid Tranquility", image: "replace-chessboard/11.jpg" },
+            { id: "sandy-sland", label: "ELITE", name: "Sandy Island", image: "replace-chessboard/12.jpg" },
+            { id: "sapphire-faerie", label: "EPIC", name: "Sapphire Faerie", image: "replace-chessboard/13.jpg" },
+            { id: "joyous-celebration", label: "M", name: "Joyous Celebration", image: "replace-chessboard/14.jpg" },
+            { id: "arcane-academia", label: "SPECIAL", name: "Arcane Academia", image: "replace-chessboard/15.jpg" },
+            { id: "tigers-terrace", label: "SPECIAL", name: "Tiger's Terrace", image: "replace-chessboard/16.jpg" },
+            { id: "beach-lounge", label: "SPECIAL", name: "Beach Lounge", image: "replace-chessboard/17.jpg" },
+            { id: "divine-astrolabe", label: "SPECIAL", name: "Divine Astrolabe", image: "replace-chessboard/18.jpg" },
+            { id: "hallowed-ruins", label: "SPECIAL", name: "Hallowed Ruins", image: "replace-chessboard/19.jpg" },
+            { id: "necrokeep", label: "ELITE", name: "Necrokeep", image: "replace-chessboard/20.jpg" },
+            { id: "desolate-ruin", label: "ELITE", name: "Desolate Ruin", image: "replace-chessboard/21.jpg" },
+            { id: "celestial-palace", label: "ELITE", name: "Celestial Palace", image: "replace-chessboard/22.jpg" },
+            { id: "jungle-ruins", label: "ELITE", name: "Jungle Ruins", image: "replace-chessboard/23.jpg" },
+            { id: "spring-breeze", label: "SPECIAL", name: "Spring Breeze", image: "replace-chessboard/24.jpg" },
+            { id: "sandfall-ruins", label: "EPIC", name: "Sandfall Ruins", image: "replace-chessboard/25.jpg" },
+            { id: "booty-bay", label: "EPIC", name: "Booty Bay", image: "replace-chessboard/26.jpg" },
+            { id: "dragon-altar", label: "EPIC", name: "Dragon Altar", image: "replace-chessboard/27.jpg" },
+            { id: "machine-shop", label: "EPIC", name: "Machine Shop", image: "replace-chessboard/28.jpg" },
+            { id: "haunted-pumpkin-house", label: "EPIC", name: "Haunted Pumpkin House", image: "replace-chessboard/29.jpg" },
+            { id: "cybercity", label: "MAGICAL", name: "Cybercity", image: "replace-chessboard/30.jpg" },
+            { id: "astral-library", label: "SPECIAL", name: "Astral Library", image: "replace-chessboard/31.jpg" },
+            { id: "moonlit-archive", label: "SPECIAL", name: "Moonlit Archive", image: "replace-chessboard/32.jpg" },
+            { id: "ghostly-library", label: "SPECIAL", name: "Ghostly Library", image: "replace-chessboard/33.jpg" },
+            { id: "spring-training-camp", label: "GOGOPAS", name: "Spring Training Camp", image: "replace-chessboard/34.jpg" },
+            { id: "summer-training-camp", label: "GOGOPAS", name: "Summer Training Camp", image: "replace-chessboard/35.jpg" },
+            { id: "autumn-training-camp", label: "GOGOPAS", name: "Autumn Training Camp", image: "replace-chessboard/36.jpg" }
+        ];
+        
+        const productsData = [
+            {
+                id: 1,
+                title: "Divine Astrolabe",
+                subtitle: "FANTASY • OBSERVATORIUM BINTANG",
+                type: "CHESSBOARD ORIGINAL",
+                tags: ["CS ORI", "MAGICAL"],
+                views: 1273,
+                description: "Arena berbentuk lingkaran berwarna biru gelap dengan ukiran matahari bersinar dan skala derajat emas.",
+                priceRaw: 5000,
+                price: "Gratis",
+                image: "https://i.ibb.co.com/zTQf5nfL/20261017-104413.jpg",
+                categoryKey: "chessboard-original",
+                categoryLabel: "CS ORI",
+                downloadLinks: { "backup": "https://link-download.zip" }
+            },
+            {
+                id: 2,
+                title: "Divine Astrolabe",
+                subtitle: "FANTASY • OBSERVATORIUM BINTANG",
+                type: "CHESSBOARD ORIGINAL",
+                tags: ["CS ORI", "MAGICAL"],
+                views: 1273,
+                description: "Arena berbentuk lingkaran berwarna biru gelap dengan ukiran matahari bersinar dan skala derajat emas.",
+                priceRaw: 5000,
+                price: "Gratis",
+                image: "https://i.ibb.co.com/6R95BjCS/20261017-104937.jpg",
+                categoryKey: "chessboard-original",
+                categoryLabel: "CS ORI",
+                downloadLinks: { "backup": "https://link-download.zip" }
+            },
+            {
+                id: 3,
+                title: "Astral Sanctum",
+                subtitle: "Sanctuary of the Eternal Starlight",
+                type: "CHESSBOARD ORIGINAL",
+                tags: ["CS ORI", "COLLECTOR"],
+                views: 1273,
+                description: "Chessboard mewah bertema mistis dengan bingkai perak ukiran elegan, papan ungu bercahaya dengan efek bintang berputar di tengah, dan hiasan permata safir di tepinya.",
+                priceRaw: 5000,
+                price: "Gratis",
+                image: "chessboard/astral-sanctum.jpg",
+                categoryKey: "chessboard-original",
+                categoryLabel: "CS ORI",
+                downloadLinks: { 
+                  "arcane-academia": "https://sfile.co/Vb7ofSXk2Kn",
+                  "astral-library": "https://sfile.co/bT7cTSExyYf",
+                  "autumn-groves": "https://sfile.co/aPnlZEfn2aY",
+                  "autumn-training-camp": "https://sfile.co/hS05gmyYlbT",
+                  "beach-lounge": "https://sfile.co/8A0hobRhmlO",
+                  "blazing-battlefield": "https://sfile.co/Cor0H16iZtQ",
+                  "booty-bay": "https://sfile.co/4AtAeXImYq7",
+                  "celestial-palace": "https://sfile.co/huKEyuvVUv5",
+                  "cybercity": "https://sfile.co/mzuwzhmmrlG",
+                  "desolate-ruin": "https://sfile.co/wHrDMkRFuSH",
+                  "divine-astrolabe": "https://sfile.co/HrmwIabNuZf",
+                  "dragon-altar": "https://sfile.co/cQVXFhFLPxj",
+                  "empire-battlefield": "https://sfile.co/zZH7plwfdhE",
+                  "frigid-tranquility": "https://sfile.co/ZyTBpzdA34d",
+                  "ghostly-library": "https://sfile.co/AsQtEIJmveT",
+                  "hallowed-ruins": "https://sfile.co/pphUuEBD596",
+                  "haunted-pumpkin-house": "https://sfile.co/R1tE44Kst7R",
+                  "imperial-splendour": "https://sfile.co/ssYvkjLJJss",
+                  "joyous-celebration": "https://sfile.co/ePreJ1jva8m",
+                  "jungle-ruins": "https://sfile.co/EevekpfgchB",
+                  "machine-shop": "https://sfile.co/nPLGyZcTtR4",
+                  "memorial-hill": "https://sfile.co/qVDxHnmiqEo",
+                  "moonlit-archive": "https://sfile.co/x5MZqXKEZD5",
+                  "necrokeep": "https://sfile.co/sp7KKEho99f",
+                  "origin-remains": "https://sfile.co/dRIz1Tj8Sgk",
+                  "ruins-of-fail": "https://sfile.co/osJYiQEWoPB",
+                  "sandfall-ruins": "https://sfile.co/9mLwBpZEKW9",
+                  "sandy-sland": "https://sfile.co/uiY4XuUPgMF",
+                  "sapphire-faerie": "https://sfile.co/gDR2Jz2ZNPu",
+                  "silent-ridge": "https://sfile.co/bAxTiBpUN4b",
+                  "spring-breeze": "https://sfile.co/4kEYp9PEsRp",
+                  "spring-training-camp": "https://sfile.co/HbdW06PS5sE",
+                  "summer-training-camp": "https://sfile.co/uNbaRdlMa6X",
+                  "tigers-terrace": "https://sfile.co/wctP6njZ8vZ",
+                  "verdant-wonderland": "https://sfile.co/yMivSrLBxN2" }
+            }
+        ];
+
+        let activeCategory = 'all';
+        let searchQuery = '';
+        let displayLimit = 6;
+        let selectedProduct = null;
+        let selectedSlotSkin = slotSkinsData[0];
+
+        function formatViews(num) {
+            if (num >= 1000) {
+                let formatted = (num / 1000).toFixed(1);
+                return formatted.endsWith('.0') ? (num / 1000) + 'k' : formatted + 'k';
+            }
+            return num;
+        }
+
+        window.onload = function() {
+            renderPills();
+            renderProducts();
+        };
+
+        function getCategoryCount(catId) {
+            if (catId === 'all') {
+                return productsData.length;
+            }
+            return productsData.filter(item => {
+                return (catId === 'request' && item.tags.includes('REQUEST')) ||
+                       (catId === 'chessboard-custom' && item.tags.includes('CS CUSTOM')) ||
+                       (catId === 'chessboard-original' && item.tags.includes('CS ORI')) ||
+                       (catId === 'commander' && item.tags.includes('COMMANDER')) ||
+                       (item.categoryKey === catId);
+            }).length;
+        }
+
+        function renderPills() {
+            const container = document.getElementById('filterPillsContainer');
+            if (!container) return;
+            container.innerHTML = categoryList.map(cat => {
+                const count = getCategoryCount(cat.id);
+                const isActive = activeCategory === cat.id;
+                return `
+                    <button onclick="filterCategory('${cat.id}')" class="px-3.5 py-1.5 rounded-full text-xs font-semibold flex items-center space-x-1.5 transition-all duration-200 border ${
+                        isActive 
+                        ? 'bg-purple-600 border-purple-500 text-white shadow-md' 
+                        : 'bg-[#121626] border-[#232a42] text-gray-300 hover:border-purple-500/50'
+                    }">
+                        <span class="uppercase tracking-wider">${cat.name}</span>
+                        <span class="${isActive ? 'bg-purple-800 text-purple-200' : 'bg-[#1c2238] text-gray-400'} text-[10px] px-1.5 py-0.2 rounded-full font-bold">${count}</span>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function filterCategory(catId) {
+            activeCategory = catId;
+            displayLimit = 6;
+            renderPills();
+            renderProducts();
+        }
+
+        function handleSearch() {
+            searchQuery = document.getElementById('searchInput').value.toLowerCase();
+            displayLimit = 6;
+            renderProducts();
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            
+            let filtered = productsData.filter(item => {
+                const matchesCategory = (activeCategory === 'all') || 
+                                       (activeCategory === 'request' && item.tags.includes('REQUEST')) ||
+                                       (activeCategory === 'chessboard-custom' && item.tags.includes('CS CUSTOM')) ||
+                                       (activeCategory === 'chessboard-original' && item.tags.includes('CS ORI')) ||
+                                       (activeCategory === 'commander' && item.tags.includes('COMMANDER')) ||
+                                       (item.categoryKey === activeCategory);
+
+                const matchesSearch = item.title.toLowerCase().includes(searchQuery) || 
+                                      item.description.toLowerCase().includes(searchQuery) ||
+                                      item.type.toLowerCase().includes(searchQuery);
+
+                return matchesCategory && matchesSearch;
+            });
+
+            const visibleItems = filtered.slice(0, displayLimit);
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (loadMoreBtn) {
+                if (displayLimit >= filtered.length) {
+                    loadMoreBtn.style.display = 'none';
+                } else {
+                    loadMoreBtn.style.display = 'flex';
+                    loadMoreBtn.querySelector('span').innerText = "Lihat produk lainnya";
+                }
+            }
+            const countInfo = document.getElementById('productCountInfo');
+            if (countInfo) {
+                countInfo.innerText = `Menampilkan ${visibleItems.length} dari ${filtered.length} produk`;
+            }
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 bg-[#121626] rounded-2xl border border-gray-800 p-4">
+                        <i class="fa-solid fa-ghost text-4xl text-gray-600 mb-2"></i>
+                        <p class="text-sm text-gray-400 font-medium">Produk tidak ditemukan</p>
+                        <p class="text-xs text-gray-500 mt-1">Coba gunakan kata kunci atau filter kategori lain.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = visibleItems.map(item => `
+                <div onclick="openProductDetail(${item.id})" class="bg-[#121626] border border-[#1F263E] rounded-2xl overflow-hidden shadow-lg transition-all hover:border-purple-500/50 cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden">
+                            <img src="${item.image}" alt="${item.title}" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute top-3 left-3 right-3 flex justify-between items-center">
+                                <span class="bg-black/60 backdrop-blur-md text-gray-200 text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider border border-white/10">
+                                    ${item.tags[0]} 
+                                </span>
+                                ${item.tags[1] ? `
+                                    <span class="bg-pink-600/90 backdrop-blur-md text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">
+                                        ${item.tags[1]}
+                                    </span>
+                                ` : ''}
+                            </div>
+                        </div>
+
+                        <div class="p-4 space-y-2">
+                            <div class="text-[10px] font-extrabold text-cyan-400 uppercase tracking-widest">
+                                ${item.type}
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-serif-title leading-snug">
+                                ${item.title}
+                            </h3>
+                            <p class="text-xs text-gray-300 leading-relaxed line-clamp-2">
+                                ${item.description}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 pt-0">
+                        <div class="pt-3 flex items-center justify-between border-t border-gray-800/80">
+                            <div class="text-base font-extrabold text-green-400">
+                                ${item.price}
+                            </div>
+                            <button onclick="event.stopPropagation(); openProductDetail(${item.id})" class="px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs rounded-lg uppercase tracking-wider shadow-md transition">
+                                LIHAT DETAIL
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleShowAll() {
+            displayLimit += 6;
+            renderProducts();
+        }
+
+        function openProductDetail(productId) {
+            selectedProduct = productsData.find(p => p.id === productId);
+            if (!selectedProduct) return;
+
+            const imgContainer = document.getElementById('detailImageContainer');
+            imgContainer.innerHTML = `
+                <img src="${selectedProduct.image}" alt="${selectedProduct.title}" class="w-full h-56 object-cover">
+                <div class="absolute top-3 left-3 flex space-x-1.5">
+                    <span class="bg-black/60 backdrop-blur-md text-gray-200 text-[10px] font-extrabold px-2.5 py-1 rounded uppercase border border-white/10">
+                        ${selectedProduct.tags[0]}
+                    </span>
+                    ${selectedProduct.tags[1] ? `
+                        <span class="bg-pink-600/90 backdrop-blur-md text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase">
+                            ${selectedProduct.tags[1]}
+                        </span>
+                    ` : ''}
+                </div>
+            `;
+
+            document.getElementById('detailSubtitle').innerText = selectedProduct.subtitle || selectedProduct.type;
+            document.getElementById('detailTitle').innerText = selectedProduct.title;
+            document.getElementById('detailDescription').innerText = selectedProduct.description;
+            document.getElementById('detailCategoryName').innerText = selectedProduct.categoryLabel || "COMMANDER ORIGINAL";
+            document.getElementById('detailPrice').innerText = selectedProduct.price;
+
+            document.getElementById('productDetailModal').classList.remove('hidden');
+        }
+
+        function closeDetailModal() {
+            document.getElementById('productDetailModal').classList.add('hidden');
+        }
+
+        function goToOrderModal() {
+            if (!selectedProduct) return;
+
+            closeDetailModal();
+
+            document.getElementById('detailScriptName').innerText = selectedProduct.title;
+            renderSlotSkins();
+            updateDetailReplace();
+
+            document.getElementById('orderOptionsModal').classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderOptionsModal').classList.add('hidden');
+        }
+
+        function renderSlotSkins(filterKeyword = '') {
+            const container = document.getElementById('slotSkinGrid');
+            const filtered = slotSkinsData.filter(skin => skin.name.toLowerCase().includes(filterKeyword.toLowerCase()));
+
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="col-span-full text-center text-xs text-gray-500 py-4">Skin tidak ditemukan</div>`;
+                return;
+            }
+
+            container.innerHTML = filtered.map(skin => {
+                const isSelected = selectedSlotSkin && selectedSlotSkin.id === skin.id;
+                return `
+                    <div onclick="selectSlotSkin('${skin.id}')" class="bg-[#12162a] border ${isSelected ? 'border-purple-500 ring-2 ring-purple-500/50' : 'border-[#202845]'} rounded-xl p-1.5 cursor-pointer transition hover:border-purple-400 flex flex-col justify-between">
+                        <img src="${skin.image}" alt="${skin.name}" class="w-full h-14 object-cover rounded-lg mb-1.5">
+                        <div class="flex flex-col justify-start">
+                            <span class="text-[8px] font-black ${skin.label === 'COLLECTOR' ? 'text-cyan-400' : 'text-emerald-400'} block uppercase tracking-wider mb-0.5">${skin.label}</span>
+                            <p class="text-[10px] font-bold text-white leading-tight line-clamp-2">${skin.name}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function selectSlotSkin(skinId) {
+            const skin = slotSkinsData.find(s => s.id === skinId);
+            if (skin) {
+                selectedSlotSkin = skin;
+                renderSlotSkins(document.getElementById('skinSearchInput').value);
+                updateDetailReplace();
+            }
+        }
+
+        function filterSlotSkins() {
+            const query = document.getElementById('skinSearchInput').value;
+            renderSlotSkins(query);
+        }
+
+        function updateDetailReplace() {
+            if (selectedSlotSkin) {
+                document.getElementById('detailReplaceSkinName').innerText = selectedSlotSkin.name;
+            }
+        }
+
+        function openQrisModal() {
+            document.getElementById('qrisModal').classList.remove('hidden');
+            document.getElementById('qrisModal').classList.add('flex');
+        }
+
+        function closeQrisModal() {
+            document.getElementById('qrisModal').classList.add('hidden');
+            document.getElementById('qrisModal').classList.remove('flex');
+        }
+
+        function downloadSelectedFile() {
+            if (!selectedProduct) return;
+
+            // 1. Ambil URL File Download
+            let downloadUrl = null;
+            if (selectedProduct.downloadLinks && selectedSlotSkin) {
+                downloadUrl = selectedProduct.downloadLinks[selectedSlotSkin.id];
+            }
+
+            if (!downloadUrl) {
+                downloadUrl = `https://example.com/download/${selectedProduct.id}-${selectedSlotSkin ? selectedSlotSkin.id : 'default'}.zip`;
+            }
+
+            // 2. Susun Parameter URL untuk Mengirim Data Produk ke download.html
+            const params = new URLSearchParams({
+                title: selectedProduct.title,
+                type: selectedProduct.type || 'CHESSBOARD ORIGINAL',
+                desc: selectedProduct.description || '',
+                replace: selectedSlotSkin ? selectedSlotSkin.name : 'Default',
+                img: selectedProduct.image,
+                tag1: selectedProduct.tags[0] || '',
+                tag2: selectedProduct.tags[1] || '',
+                file: downloadUrl
+            });
+
+            // 3. Arahkan Pengunjung ke Halaman download.html
+            window.location.href = `download.html?${params.toString()}`;
+        }
+    </script>
+</body>
+</html>
