@@ -760,32 +760,29 @@
         }
 
         function downloadSelectedFile() {
-            if (!selectedProduct) return;
+    if (!selectedProduct) return;
 
-            // 1. Ambil URL File Download
-            let downloadUrl = null;
-            if (selectedProduct.downloadLinks && selectedSlotSkin) {
-                downloadUrl = selectedProduct.downloadLinks[selectedSlotSkin.id];
-            }
+    // 1. Ambil URL File Download
+    let downloadUrl = null;
+    if (selectedProduct.downloadLinks && selectedSlotSkin) {
+        downloadUrl = selectedProduct.downloadLinks[selectedSlotSkin.id];
+    }
 
-            if (!downloadUrl) {
-                downloadUrl = `https://example.com/download/${selectedProduct.id}-${selectedSlotSkin ? selectedSlotSkin.id : 'default'}.zip`;
-            }
+    if (!downloadUrl) {
+        downloadUrl = `https://example.com/download/${selectedProduct.id}-${selectedSlotSkin ? selectedSlotSkin.id : 'default'}.zip`;
+    }
 
-            // 2. Susun Parameter URL untuk Mengirim Data Produk ke download.html
-            const params = new URLSearchParams({
-                title: selectedProduct.title,
-                type: selectedProduct.type || 'CHESSBOARD ORIGINAL',
-                desc: selectedProduct.description || '',
-                replace: selectedSlotSkin ? selectedSlotSkin.name : 'Default',
-                img: selectedProduct.image,
-                tag1: selectedProduct.tags[0] || '',
-                tag2: selectedProduct.tags[1] || '',
-                file: downloadUrl
-            });
+    // 2. LANGSUNG DOWNLOAD, tanpa lewat download.html
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = '';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
 
-            // 3. Arahkan Pengunjung ke Halaman download.html
-            window.location.href = `download.html?${params.toString()}`;
+    // Tutup modal-nya biar balik ke katalog
+    closeOrderModal();
         }
     </script>
 </body>
