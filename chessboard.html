@@ -96,24 +96,36 @@
 
     <!-- Header / Navbar Top -->
     <header class="fixed top-0 left-0 right-0 z-40 glass-header border-b border-gray-800/80">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-center">
-            <a href="#" class="flex items-center space-x-2.5">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md">
-                    <span class="text-lg font-bold">♠</span>
-                </div>
-                <span class="text-xl font-extrabold tracking-wide text-white font-serif-title">
-                    SANKY<span class="text-blue-500"> MCGG</span>
-                </span>
-            </a>
-        </div>
-    </header>
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative">
+        
+        <!-- LOGO KIRI -->
+        <a href="#" class="flex items-center shrink-0">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md">
+                <span class="text-lg font-bold">♠</span>
+            </div>
+        </a>
 
+        <!-- NAMA TENGAH -->
+        <a href="#" class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
+            <span class="text-xl font-extrabold tracking-wide text-white font-serif-title">
+                SANKY<span class="text-blue-500"> MCGG</span>
+            </span>
+        </a>
+
+        <!-- TOMBOL CARI KANAN -->
+        <button onclick="focusSearch()" class="w-9 h-9 rounded-full bg-[#121626] border border-[#1f2742] flex items-center justify-center text-gray-300 hover:text-white hover:border-purple-500 transition shrink-0">
+            <i class="fa-solid fa-magnifying-glass text-sm"></i>
+        </button>
+
+    </div>
+</header>
+  
     <div class="h-20"></div>
 
     <main class="max-w-6xl mx-auto px-4 flex-grow w-full space-y-8">
         
         <!-- Search Bar Section -->
-        <section class="pt-2 max-w-xl mx-auto">
+        <section id="searchBarSection" class="pt-2 max-w-xl mx-auto hidden">
             <div class="relative">
                 <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
                     <i class="fa-solid fa-magnifying-glass text-sm"></i>
@@ -165,20 +177,6 @@
               </div>
             </div>
         </section>
-
-             <!-- 2. SLOT IKLAN ATAS (Di bawah header, sebelum daftar produk) -->
-            <div class="w-full bg-[#121626] border border-dashed border-gray-800 rounded-xl p-3 text-center mb-6 overflow-hidden">
-                <span class="text-[10px] text-gray-500 block uppercase tracking-widest mb-1">IKLAN / ADS</span>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-9630057727908445"
-                     data-ad-slot="2957618554"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
       
         <!-- Catalog Filter Pills Section -->
         <section id="catalog" class="pt-2">
@@ -260,20 +258,6 @@
                         <i class="fa-solid fa-angle-right text-gray-500 text-xs"></i>
                     </a>
             </div>
-              
-            <!-- 3. SLOT IKLAN BAWAH (Sebelum footer) -->
-        <div class="w-full bg-[#121626] border border-dashed border-gray-800 rounded-xl p-3 text-center mt-8 overflow-hidden">
-            <span class="text-[10px] text-gray-500 block uppercase tracking-widest mb-1">IKLAN / ADS</span>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-9630057727908445"
-                 data-ad-slot="2957618554"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
         </section>
 
         <!-- Footer -->
@@ -760,6 +744,19 @@
         function closeQrisModal() {
             document.getElementById('qrisModal').classList.add('hidden');
             document.getElementById('qrisModal').classList.remove('flex');
+        }
+        function focusSearch(){
+    const section = document.getElementById('searchBarSection');
+    const input = document.getElementById('searchInput');
+    if(!section || !input) return;
+
+    // Kalau lagi sembunyi, munculin
+    // Kalau lagi muncul, sembunyiin lagi
+    section.classList.toggle('hidden');
+
+    if(!section.classList.contains('hidden')){
+        setTimeout(()=> input.focus(), 100);
+    }
         }
 
         function downloadSelectedFile() {
